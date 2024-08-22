@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikasi ToDo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="clock">
+        <p class="current-date" id="current-date"></p>
+        <p class="current-time" id="current-time"></p>
+    </div>
+    <header>
+        <div class="profile">
+            <img src="avatar.jpg" alt="Profile Avatar" class="avatar">
+            <div class="user-info">
+                <p class="user-name">Reza Alamsyah Rapi</p>
+                <p class="user-title">Manager</p>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <h1>ToDo List</h1>
+        <form id="todo-form">
+            <input type="text" id="todo-input" placeholder="Silahkan di isi.." required>
+            <select id="position-select" required>
+                <option value="" disabled selected>Level</option>
+                <option value="Low">Low</option>
+                <option value="Medium">Medium</option>
+                <option value="High">High</option>
+            </select>
+            <button type="submit">Tambah</button>
+        </form>
+        <div class="todo-columns">
+            <div class="column">
+                <h2>Tasks</h2>
+                <ul id="todo-list"></ul>
+            </div>
+            <div class="column">
+                <h2>Completed</h2>
+                <ul id="completed-list"></ul>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
